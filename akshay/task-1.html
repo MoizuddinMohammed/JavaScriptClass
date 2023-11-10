@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <P>arithematic operators</P>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button onclick="action()">action</button>
+        <p>Multiplication: <span id="hi"></span></p>
+        <p>Division: <span class="hello"></span></p>
+        <script>
+            function action() 
+            {
+                var a=document.getElementById("num1").value;
+                var b=document.getElementById("num2").value;
+                console.log('Addition:: ', parseInt(a)+parseInt(b));
+                console.log('Subtraction:: ', parseInt(a)-parseInt(b));
+                document.getElementById('hi').innerHTML=parseInt(a)*parseInt(b);
+                document.getElementsByClassName('hello')[0].innerHTML=parseInt(a)/parseInt(b);
+                // document.write('remainder:: ', parseInt(a)%parseInt(b));
+            }
+        </script>
+    </body>
+</html>
